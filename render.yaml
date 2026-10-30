@@ -1,0 +1,22 @@
+services:
+  - type: web
+    name: studymate-ai-backend
+    runtime: python
+    plan: standard
+    rootDir: backend
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn main:app --host 0.0.0.0 --port $PORT
+    healthCheckPath: /healthz
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.12.8
+      - key: API_KEY
+        sync: false
+      - key: AI_PROVIDER
+        value: openrouter
+      - key: AI_MODEL
+        value: openai/gpt-4o-mini
+      - key: EMBEDDING_MODEL
+        value: sentence-transformers/all-MiniLM-L6-v2
+      - key: FRONTEND_URL
+        sync: false

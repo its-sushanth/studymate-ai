@@ -1,0 +1,11 @@
+fastapi
+uvicorn[standard]
+python-multipart
+python-dotenv
+PyMuPDF
+google-genai
+openai
+python-docx
+numpy>=1.26,<3
+faiss-cpu>=1.12.0,<2
+sentence-transformers>=3.3.0,<7

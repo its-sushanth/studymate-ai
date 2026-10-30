@@ -1,0 +1,8 @@
+Program 1: Bubble Sort Algorithm Implementation
+This program sorts an array of integers using the classic bubble sort technique. It repeatedly compares adjacent elements and swaps them if they are in the wrong order. Time complexity is O(n^2).
+
+Program 2: Dijkstra's Shortest Path Algorithm
+This program calculates the shortest path from a single source vertex to all other vertices in a weighted graph with non-negative edge weights. It uses a priority queue (min-heap) to select the minimum distance vertex greedily. Time complexity is O((V + E) log V).
+
+Program 3: Binary Search Tree In-Order Traversal
+This program implements a recursive in-order traversal of a binary search tree (BST). It traverses the left subtree, visits the root node, and traverses the right subtree, producing a sorted sequence of keys. Time complexity is O(n).
